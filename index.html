@@ -25,24 +25,24 @@
 </head>
 <body>
 
-    <!-- The image starts empty; JavaScript will choose the file dynamically -->
+    
     <img id="arg-image" alt="Loading data...">
 
     <script>
-        // 1. Type the exact names of your two uploaded image files here
+       
         const normalImage = "HobbyTown_USA_Oshkosh_interior_under_construction_2002_(The_Backrooms).jpg";
         const rareImage = "sctvmqpnr1b51.jpeg";
 
-        // 2. Define the spawn chance of the second image (from 0 to 1)
-        // 0.20 means a 20% chance. 0.05 would be a 5% chance.
+        
+        
         const rareImageChance = 0.20; 
 
-        // The system rolls a random number and selects the image
+        
         const imgElement = document.getElementById("arg-image");
         
         if (Math.random() < rareImageChance) {
             imgElement.src = rareImage;
-            console.log("Anomaly detected in system logs."); // Secret message hidden in the browser console
+            console.log("I lost you.");
         } else {
             imgElement.src = normalImage;
         }
